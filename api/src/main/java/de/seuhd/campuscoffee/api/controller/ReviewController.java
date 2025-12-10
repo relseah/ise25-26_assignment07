@@ -52,7 +52,6 @@ public class ReviewController extends CrudController<Review, ReviewDto, Long> {
         return super.getAll();
     }
 
-    // TODO: Implement the missing methods/endpoints.
     @CrudOperation(operation = GET_BY_ID, resource = REVIEW)
     @GetMapping("/{id}")
     public @NonNull ResponseEntity<ReviewDto> getById(@Parameter(description = "Unique identifier of the review to retrieve.", required = true)
